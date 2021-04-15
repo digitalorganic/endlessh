@@ -16,7 +16,7 @@ trap multiple clients at a time.
 The image built with alpine latest stable 3.13
 
 ```shell
-$ docker container run -d --name endlessh -p 22:2222 \
+$ docker container run  -d --restart=always  --name endlessh -p 22:2222 \
 digitalorganic/endlessh:1.0
 ```
 
