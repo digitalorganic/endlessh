@@ -11,6 +11,15 @@ occurs, this program doesn't depend on any cryptographic libraries. It's
 a simple, single-threaded, standalone C program. It uses `poll()` to
 trap multiple clients at a time.
 
+## Docker Usage
+
+The image built with alpine latest stable 3.13
+
+```shell
+$ docker container run -d --name endlessh -p 22:2222 \
+digitalorganic/endlessh:1.0
+```
+
 ## Usage
 
 Usage information is printed with `-h`.
